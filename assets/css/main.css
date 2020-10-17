@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #0B1F26;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  font-family: Montserrat;
+}
+
+@media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+body #bg {
+  position: absolute;
+  top: 0px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.7;
+  z-index: -1;
+  background-image: url("../img/background.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body #nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8vh;
+}
+
+body #nav #logo {
+  color: #F2F2F2;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 40px;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-delay: 0.3s ease-in-out;
+          transition-delay: 0.3s ease-in-out;
+}
+
+body #nav #logo.close {
+  color: #C0A16A;
+}
+
+body #nav #logo h4 {
+  font-weight: normal;
+}
+
+body #nav #nav-links {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 40%;
+}
+
+@media (min-width: 1000px) {
+  body #nav #nav-links {
+    width: 30%;
+  }
+}
+
+@media (max-width: 700px) {
+  body #nav #nav-links {
+    position: absolute;
+    height: 100vh;
+    top: 0vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+    z-index: -1;
+  }
+  body #nav #nav-links.show {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  body #nav #nav-links::after {
+    content: "";
+    background: #0B1F26;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  body #nav #nav-links #nav-item {
+    opacity: 0;
+    -webkit-transition: 0.8s ease-in-out;
+    transition: 0.8s ease-in-out;
+  }
+  body #nav #nav-links #nav-item:nth-child(1) {
+    -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+  }
+  body #nav #nav-links #nav-item:nth-child(2) {
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+  }
+  body #nav #nav-links #nav-item:nth-child(3) {
+    -webkit-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+  }
+  body #nav #nav-links #nav-item:nth-child(4) {
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+  }
+  body #nav #nav-links #nav-item.show {
+    opacity: 1;
+  }
+}
+
+body #nav #nav-links a {
+  color: #F2F2F2;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+@media (min-width: 1000px) {
+  body #nav #nav-links a {
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+  }
+  body #nav #nav-links a:hover {
+    color: #C0A16A;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 14px;
+  }
+}
+
+body #nav #nav-links li {
+  list-style: none;
+}
+
+body #nav #burger {
+  cursor: pointer;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  -webkit-transition-duration: 0.2s ease-in-out;
+          transition-duration: 0.2s ease-in-out;
+}
+
+@media (min-width: 1000px) {
+  body #nav #burger {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  body #nav #burger {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  body #nav #burger {
+    display: block;
+  }
+  body #nav #burger.close #line {
+    background-color: #C0A16A;
+  }
+}
+
+body #nav #burger #line {
+  width: 30px;
+  height: 3px;
+  background-color: #F2F2F2;
+  margin: 7px;
+}
+/*# sourceMappingURL=main.css.map */

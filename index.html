@@ -3,117 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css" />
     <title>Version to Innovation</title>
   </head>
-
   <body>
-    <section class="landing" id="home">
-      <div class="header">
-        <a href="#default" class="logo">VI</a>
-        <div class="header-right">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#store">Store</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
-      <div class="background">
-        <div class="man">
-          <div class="overlay">
-            <div class="text">
-              <div class="overline">
-                <hr id="line" />
-                <h3>Photography is the beauty of live captured</h3>
-              </div>
-              <h2>Born out of Passion</h2>
-              <div class="scrolldown" href="#about">
-                <a href="#about" id="text">Scroll Down</a>
-                <a href="#about"
-                  ><img src="img/arrowdown.svg" alt="arrow_down"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div id="bg"></div>
 
-    <section class="aboutus" id="about">
-      <div class="left-content">
-        <div id="number">
-          <p>01</p>
-        </div>
-        <div id="line">
-          <hr />
-          <p>Who we are</p>
-        </div>
-        <h2>About us</h2>
-        <div id="arrow">
-          <p>Know us</p>
-          <a href="#"
-            ><img src="img/arrowright.svg" alt="arrow_link_AboutUs"
-          /></a>
-        </div>
+    <nav id="nav">
+      <div id="logo">
+        <h4>VI</h4>
       </div>
-      <div class="right-content">
-        <img src="img/UnknownMan.png" alt="UnknownMan" />
-      </div>
-    </section>
 
-    <section class="store">
-      <div class="storeview" id="store">
-        <div class="left-content">
-          <img src="img/Store.png" alt="Store" />
-        </div>
-        <div class="right-content">
-            <div id="number">
-                <p>02</p>
-              </div>
-              <div id="line">
-                <hr />
-                <p>Shop</p>
-              </div>
-              <div class="text">
-                <h2>See our collection</h2>
-                <p>Find the perfect product for your neeeds</p>
-            </div>
-              <div id="arrow">
-                <a href="#featured"
-                  ><img src="img/arrowright.svg" alt="arrow_link_AboutUs"
-                /></a>
-                <p>Store</p>
-        </div>
-      </div>
-      <div class="feature" id="featured">
-          <div class="headline">
-            <h2>Featured</h2>
-            <hr>
-        </div>
-        <div class="pictures">
-            <a href="#" id="one"><img src="img/left.png" alt="Featured filter number 1"></a>
-            <a href="#" id="two"><img src="img/middle.png" alt="Featured filter number 2"></a>
-            <a href="#" id="three"><img src="img/right.png" alt="Featured filter number 3"></a>
-        </div>
-        <a href="#contact" id="scroll"><img src="img/arrowdown_gold.svg" alt=""></a>
-      </div>
-    </section>
+      <ul id="nav-links">
+        <li id="nav-item"><a href="#">Home</a></li>
+        <li id="nav-item"><a href="#about">About us</a></li>
+        <li id="nav-item"><a href="#store">Store</a></li>
+        <li id="nav-item"><a href="#contact">Contact</a></li>
+      </ul>
 
-    <section class="contactus" id="contact">
-        <div class="headline">
-            <h2>VI</h2>
-            <h3>Create your next awsome picture with us</h3>
-        </div>
-        <form class="cf">
-            <div class="top">
-                <input type="text" id="input name" placeholder="Enter your name">
-                <input type="text" id="input subject" placeholder="What is your Subject">
-            </div>
-            <input type="text" id="input email" placeholder="Enter your Emailadress">
-            <input type="text" id="input message" placeholder="Send us a Message">
-            <input type="checkbox"  id="confirm"/><label for="confirm">I accept the <a href="#">terms</a> and <a href="#">conditions</a></label>
-        </form>
-    </section>
+      <div id="burger">
+        <div id="line"></div>
+        <div id="line"></div>
+        <div id="line"></div>
+      </div>
+    </nav>
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
