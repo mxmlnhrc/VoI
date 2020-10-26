@@ -15,7 +15,7 @@
       </div>
 
       <ul id="nav-links">
-        <li id="nav-item"><a href="#">Home</a></li>
+        <li id="nav-item"><a href="#home">Home</a></li>
         <li id="nav-item"><a href="#about">About us</a></li>
         <li id="nav-item"><a href="#store">Store</a></li>
         <li id="nav-item"><a href="#contact">Contact</a></li>
@@ -27,6 +27,72 @@
         <div id="line"></div>
       </div>
     </nav>
+
+    <section class="home" id="home">
+        <div class="paragraph">
+          <p>Photography is the beauty of life captured</p>
+        </div>
+        <h3 id="headline">Born out of Passion</h3>
+        <div class="scrolldown">
+          <a href="#about">Scroll down</a>
+          <img src="assets/img/arrowdown.svg"></img>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="number">
+        <h4>01</h4>
+        <hr>
+        <p>Who we are</p>
+      </div>
+
+      <h3>About us</h3>
+
+      <div class="know">
+        <p>Know us</p>
+        <img src="assets/img/arrowright.svg" alt="Go to About us">
+      </div>
+    </section>
+
+    <section class="store" id="store">
+      <div class="number">
+        <h4>02</h4>
+        <hr>
+        <p>Shop</p>
+      </div>
+
+      <h3>See your collections</h3>
+      <p>find the perfect product for your needs</p>
+
+      <div class="know">
+        <p>Vist our Store</p>
+        <img src="assets/img/arrowright.svg" alt="Go to Store">
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="headline">
+        <h2>VI</h2>
+        <h3>Create your next awsome picture with us</h3>
+      </div>
+      <form method="post" id="contact-form" action="">
+        <input type="text" name="Name" id="Contact name" placeholder="Enter your Name*" required>
+        <input type="text" name="Subject" id="Contact sub" placeholder="Subject">
+        <br>
+        <input type="email" name="Email" id="Contact email" placeholder="Enter your Email adress*" required>
+        <textarea name="message" id="Contact msg" rows="4" placeholder="Your Message"></textarea>
+        <br>
+        <input type="checkbox" name="Checkbox" id="Contact check" required>
+        <label for="Checkbox" id="Contact check-text">I accept the terms and conditions</label>
+        <input type="button" value="submit" id="Contact send">
+      </form>
+    </section>
+
+    <footer>
+      <p>©2020</p>
+      <p>Website by Maximilian Henrici</p>
+      <a href="pages/Privacy-and-Terms">Privacy & Terms</a>
+    </footer>
 
     <script src="assets/js/main.js"></script>
   </body>
